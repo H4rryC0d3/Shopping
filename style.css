@@ -223,7 +223,7 @@ body {
   position: relative;
   height: 500px;
   width: 100%;
-  background: url("bnr7.jpg") center/cover no-repeat;
+  background: url("images/bnr7.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -907,6 +907,284 @@ footer hr {
   margin: 10px 0;
 }
 
+
+
+/* 🖥️ Laptop (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .header-main {
+    padding: 15px 30px;
+  }
+
+  .search-bar {
+    max-width: 300px;
+  }
+
+  .category-grid,
+  .sports-grid,
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+   .indowestern-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+/* 💻 Tablet Landscape (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .header-main {
+    flex-wrap: wrap;
+    padding: 15px 25px;
+  }
+
+  .search-bar {
+    order: 4;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 15px;
+  }
+
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100vh;
+    background: #fff;
+    transition: left 0.3s ease;
+    z-index: 1001;
+    overflow-y: auto;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-bar.active {
+    left: 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+  }
+
+  
+
+  .category-grid,
+  .sports-grid,
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+   .traditional-section {
+    padding: 40px 20px;
+  }
+
+  .traditional-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .traditional-featured {
+    height: 400px;
+  }
+
+  .indowestern-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .hero-section {
+    height: 400px;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+}
+
+/* 📱 Tablet Portrait (max-width: 768px) */
+@media (max-width: 768px) {
+  .header-main {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .header-icons {
+    gap: 15px;
+  }
+
+  .icon-item span:not(.cart-count) {
+    display: none;
+  }
+
+  .search-bar {
+    order: 4;
+  }
+
+  .category-grid,
+  .sports-grid,
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+   .indowestern-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .traditional-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .traditional-featured {
+    height: 400px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+
+ 
+  .footer-columns {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  footer {
+    padding: 40px 20px 20px;
+  }
+}
+
+/* 📲 Mobile Large (max-width: 600px) */
+@media (max-width: 600px) {
+  .header-main {
+    padding: 12px 15px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .search-bar input {
+    padding: 10px 40px 10px 15px;
+    font-size: 14px;
+  }
+
+  .category-grid,
+  .sports-grid,
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+   .indowestern-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .category-card {
+    height: 180px;
+  }
+
+  .hero-section {
+    height: 350px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+ 
+  .footer-columns {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  footer {
+    padding: 40px 20px 20px;
+  }
+}
+
+/* 📱 Mobile Small (max-width: 460px) */
+@media (max-width: 460px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .icon-item {
+    font-size: 18px;
+  }
+
+  .search-bar input {
+    font-size: 13px;
+  }
+
+  .category-grid,
+  .sports-grid,
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+   .indowestern-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .category-card,
+  .product-image {
+    height: 180px;
+  }
+
+  .hero-content h1 {
+    font-size: 22px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .cta-button {
+    font-size: 13px;
+    padding: 8px 20px;
+  }
+}
+
+
 /* Mobile Styles - SINGLE UNIFIED VERSION */
 @media (max-width: 968px) {
   .header-main {
@@ -1050,10 +1328,7 @@ footer hr {
     height: 220px;
   }
 
-  .indowestern-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
+ 
 
   .sports-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1065,14 +1340,7 @@ footer hr {
     gap: 15px;
   }
 
-  /* Traditional section stays single column on tablet */
-  .traditional-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .traditional-featured {
-    height: 400px;
-  }
+  
 
   .featured-content {
     padding: 30px 20px;
@@ -1082,29 +1350,9 @@ footer hr {
     font-size: 24px;
   }
 
-  .traditional-item {
-    flex-direction: row;
-  }
+  
 
-  .traditional-thumb {
-    width: 120px;
-    height: 120px;
-  }
-
-  .footer-columns {
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-  }
-
-  .footer-bottom {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  footer {
-    padding: 40px 20px 20px;
-  }
-
+ 
   .sports-price-row {
     flex-direction: column;
     align-items: flex-start;
@@ -1179,9 +1427,7 @@ footer hr {
     font-size: 20px;
   }
 
-  .footer-columns {
-    grid-template-columns: 1fr;
-  }
+
 
   /* ALL CARD GRIDS - 2 COLUMNS on mobile */
   .category-grid {
@@ -1201,18 +1447,7 @@ footer hr {
     font-size: 16px;
   }
 
-  .indowestern-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-
-  .indowestern-info {
-    padding: 15px;
-  }
-
-  .indowestern-image {
-    height: 200px;
-  }
+ 
 
   .sports-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1244,15 +1479,6 @@ footer hr {
     font-size: 16px;
   }
 
-  /* Traditional section - single column on small mobile */
-  .traditional-item {
-    flex-direction: column;
-  }
-
-  .traditional-thumb {
-    width: 100%;
-    height: 150px;
-  }
 
 }
 
