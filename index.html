@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harry's - Fashion E-commerce</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <div class="top-banner">
+      🎉 MEGA SALE! Get Up to 70% OFF on All Categories | Free Shipping on
+      Orders Above ₹1999
+    </div>
+ <div class="mobile-overlay"></div>
+    <header class="header">
+  <div class="header-main">
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="logo">Harry's</div>
+
+    <div class="search-bar">
+      <input
+        type="text"
+        placeholder="Search for products, brands and more..."
+      />
+      <span class="search-icon">🔍</span>
+    </div>
+
+    <!-- ✅ Move icons inside header-main -->
+    <div class="header-icons">
+      <div class="icon-item">👤 <span>Account</span></div>
+      <div class="icon-item">❤️ <span>Wishlist</span></div>
+      <div class="icon-item">
+        🛒 <span>Cart</span>
+        <span class="cart-count">3</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <nav class="nav-bar">
+        <div class="nav-container">
+          <ul class="nav-links">
+            <li>
+              <a href="#men">Men</a>
+              <div class="dropdown">
+                <a href="#tshirts">T-Shirts & Polos</a>
+                <a href="#shirts">Shirts</a>
+                <a href="#jeans">Jeans & Trousers</a>
+                <a href="#jackets">Jackets & Coats</a>
+                <a href="#shoes">Shoes & Sneakers</a>
+                <a href="#accessories">Accessories</a>
+              </div>
+            </li>
+            <li>
+              <a href="#women">Women</a>
+              <div class="dropdown">
+                <a href="#dresses">Dresses & Gowns</a>
+                <a href="#tops">Tops & Tunics</a>
+                <a href="#sarees">Sarees & Lehengas</a>
+                <a href="#jeans">Jeans & Jeggings</a>
+                <a href="#heels">Heels & Flats</a>
+                <a href="#handbags">Handbags</a>
+              </div>
+            </li>
+            <li>
+              <a href="#kids">Kids</a>
+              <div class="dropdown">
+                <a href="#boys">Boys Clothing</a>
+                <a href="#girls">Girls Clothing</a>
+                <a href="#infants">Infants</a>
+                <a href="#toys">Toys & Games</a>
+                <a href="#shoes">Kids Footwear</a>
+              </div>
+            </li>
+            <li>
+              <a href="#beauty">Beauty</a>
+              <div class="dropdown">
+                <a href="#makeup">Makeup</a>
+                <a href="#skincare">Skincare</a>
+                <a href="#haircare">Haircare</a>
+                <a href="#fragrance">Fragrances</a>
+                <a href="#tools">Beauty Tools</a>
+              </div>
+            </li>
+            <li>
+              <a href="#home">Home & Living</a>
+              <div class="dropdown">
+                <a href="#bedding">Bedding</a>
+                <a href="#decor">Home Decor</a>
+                <a href="#kitchen">Kitchen & Dining</a>
+                <a href="#furniture">Furniture</a>
+                <a href="#lighting">Lighting</a>
+              </div>
+            </li>
+            <li>
+              <a href="#brands">Top Brands</a>
+              <div class="dropdown">
+                <a href="#nike">Nike</a>
+                <a href="#adidas">Adidas</a>
+                <a href="#puma">Puma</a>
+                <a href="#levis">Levi's</a>
+                <a href="#zara">Zara</a>
+                <a href="#hm">H&M</a>
+              </div>
+            </li>
+            <li><a href="#sale">Sale</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+    <section class="hero-section">
+      <div class="hero-shapes">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+      </div>
+      <div class="hero-content">
+        <h1>NEW SEASON ARRIVALS</h1>
+        <p>Discover the Latest Trends in Fashion</p>
+        <button
+          class="cta-button"
+          onclick="document.getElementById('categories').scrollIntoView({behavior: 'smooth'})"
+        >
+          Shop Now
+        </button>
+      </div>
+    </section>
+
+    <section class="categories" id="categories">
+      <h2 class="section-title">Shop by Category</h2>
+      <div class="category-grid">
+        <div
+          class="category-card"
+          onclick="document.getElementById('indowestern').scrollIntoView({behavior: 'smooth'})"
+        >
+          <img src="images/Indo-western.jpg" alt="Indo-Western" class="category-bg" />
+          <div class="category-content">
+            <h3>Indo-Western</h3>
+            <p>Fusion Fashion Collection</p>
+          </div>
+        </div>
+
+        <div
+          class="category-card"
+          onclick="document.getElementById('sports-shoes').scrollIntoView({behavior: 'smooth'})"
+        >
+          <img src="images/SportsShoes.jpg" alt="Sports Shoes" class="category-bg" />
+          <div class="category-content">
+            <h3>Sports Shoes</h3>
+            <p>Performance & Style</p>
+          </div>
+        </div>
+
+        <div
+          class="category-card"
+          onclick="document.getElementById('traditional').scrollIntoView({behavior: 'smooth'})"
+        >
+          <img
+            src="images/traditional.webp"
+            alt="Traditional Wear"
+            class="category-bg"
+          />
+          <div class="category-content">
+            <h3>Traditional Wear</h3>
+            <p>Ethnic Elegance</p>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <img src="images/Accessories.jpg" alt="Accessories" class="category-bg" />
+          <div class="category-content">
+            <h3>Accessories</h3>
+            <p>Complete Your Look</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="indowestern-section" id="indowestern">
+      <div class="indowestern-container">
+        <div class="section-header">
+          <h2>Indo-Western Collection</h2>
+          <p>Fusion of Traditional & Modern Fashion</p>
+        </div>
+        <div class="indowestern-grid">
+          <div class="indowestern-card">
+            <div class="indowestern-image">
+              <img
+                src="images/kurta2.jpg"
+                alt="Designer Kurta Set"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+              <span class="indowestern-badge">TRENDING</span>
+            </div>
+            <div class="indowestern-info">
+              <h3 class="indowestern-title">Designer Kurta Set</h3>
+              <p class="indowestern-desc">
+                Contemporary kurta with modern cuts and traditional embroidery.
+                Perfect for festive occasions.
+              </p>
+              <div class="indowestern-price">
+                <span class="price-now">₹2,999</span>
+                <span class="price-was">₹5,999</span>
+                <span class="discount">(50% OFF)</span>
+              </div>
+              <button class="view-btn">View Details</button>
+            </div>
+          </div>
+
+          <div class="indowestern-card">
+            <div class="indowestern-image">
+              <img
+                src="images/fusion.webp"
+                alt="Fusion Sherwani"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+              <span class="indowestern-badge">NEW ARRIVAL</span>
+            </div>
+            <div class="indowestern-info">
+              <h3 class="indowestern-title">Fusion Sherwani</h3>
+              <p class="indowestern-desc">
+                Modern sherwani with contemporary styling. Ideal for weddings
+                and special events.
+              </p>
+              <div class="indowestern-price">
+                <span class="price-now">₹4,499</span>
+                <span class="price-was">₹8,999</span>
+                <span class="discount">(50% OFF)</span>
+              </div>
+              <button class="view-btn">View Details</button>
+            </div>
+          </div>
+
+          <div class="indowestern-card">
+            <div class="indowestern-image">
+              <img
+                src="images/wine-western-bridal-gown-1.jpg"
+                alt="Indo-Western Gown"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+              <span class="indowestern-badge">BESTSELLER</span>
+            </div>
+            <div class="indowestern-info">
+              <h3 class="indowestern-title">Indo-Western Gown</h3>
+              <p class="indowestern-desc">
+                Elegant gown with ethnic motifs. A perfect blend of east meets
+                west fashion.
+              </p>
+              <div class="indowestern-price">
+                <span class="price-now">₹3,799</span>
+                <span class="price-was">₹7,599</span>
+                <span class="discount">(50% OFF)</span>
+              </div>
+              <button class="view-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sports-shoes-section" id="sports-shoes">
+      <div class="sports-container">
+        <div class="section-header">
+          <h2>Sports Shoes Collection</h2>
+          <p>Performance Meets Style</p>
+        </div>
+
+        <div class="sports-grid">
+          <div class="sports-card">
+            <div class="sports-image">
+              <img src="images/air.jpg" alt="Nike Air Max Pro" />
+              <div class="shoe-icon">👟</div>
+              <span class="sports-brand">NIKE</span>
+            </div>
+            <div class="sports-details">
+              <h3 class="sports-name">Air Max Pro</h3>
+              <p class="sports-category">Running Shoes</p>
+              <div class="sports-features">
+                <span class="feature-tag">Breathable</span>
+                <span class="feature-tag">Cushioned</span>
+                <span class="feature-tag">Lightweight</span>
+              </div>
+              <div class="sports-price-row">
+                <span class="sports-price">₹5,999</span>
+                <button class="add-cart-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="sports-card">
+            <div class="sports-image">
+              <img src="images/ultra.jpg" alt="Adidas Ultraboost 22" />
+              <div class="shoe-icon">👟</div>
+              <span class="sports-brand">ADIDAS</span>
+            </div>
+            <div class="sports-details">
+              <h3 class="sports-name">Ultraboost 22</h3>
+              <p class="sports-category">Training Shoes</p>
+              <div class="sports-features">
+                <span class="feature-tag">Energy Return</span>
+                <span class="feature-tag">Flexible</span>
+                <span class="feature-tag">Durable</span>
+              </div>
+              <div class="sports-price-row">
+                <span class="sports-price">₹6,499</span>
+                <button class="add-cart-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="sports-card">
+            <div class="sports-image">
+              <img src="images/s2.webp" alt="Adidas Ultraboost 22" />
+              <div class="shoe-icon">👟</div>
+              <span class="sports-brand">ADIDAS</span>
+            </div>
+            <div class="sports-details">
+              <h3 class="sports-name">boost 22</h3>
+              <p class="sports-category">Training Shoes</p>
+              <div class="sports-features">
+                <span class="feature-tag">Energy Return</span>
+                <span class="feature-tag">Flexible</span>
+                <span class="feature-tag">Durable</span>
+              </div>
+              <div class="sports-price-row">
+                <span class="sports-price">₹3,499</span>
+                <button class="add-cart-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="sports-card">
+            <div class="sports-image">
+              <img src="images/rs.jpg" alt="Puma RS-X Reinvention" />
+              <div class="shoe-icon">👟</div>
+              <span class="sports-brand">PUMA</span>
+            </div>
+            <div class="sports-details">
+              <h3 class="sports-name">RS-X Reinvention</h3>
+              <p class="sports-category">Lifestyle Shoes</p>
+              <div class="sports-features">
+                <span class="feature-tag">Stylish</span>
+                <span class="feature-tag">Comfortable</span>
+                <span class="feature-tag">Trendy</span>
+              </div>
+              <div class="sports-price-row">
+                <span class="sports-price">₹4,999</span>
+                <button class="add-cart-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="traditional-section" id="traditional">
+      <div class="traditional-container">
+        <div class="section-header">
+          <h2>Traditional Wear Collection</h2>
+          <p>Celebrate Your Heritage in Style</p>
+        </div>
+        <div class="traditional-layout">
+          <div class="traditional-featured">
+            <img
+              src="images/ex.jpg"
+              alt="Bridal Collection"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+            <div class="featured-content">
+              <h3>Exquisite Bridal Collection</h3>
+              <p>
+                Stunning lehengas, sarees, and jewelry sets for your special day
+              </p>
+              <button class="shop-now-btn">Shop Bridal Collection</button>
+            </div>
+          </div>
+
+          <div class="traditional-list">
+            <div class="traditional-item">
+              <div class="traditional-thumb">
+                <img
+                  src="images/silksaree.jpg"
+                  alt="Silk Saree"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                  "
+                />
+              </div>
+              <div class="traditional-text">
+                <h4>Designer Silk Saree</h4>
+                <p>Pure silk saree with zari work and embellishments</p>
+                <span class="price">₹4,999</span>
+              </div>
+            </div>
+
+            <div class="traditional-item">
+              <div class="traditional-thumb">
+                <img
+                  src="images/lahenga.jpg"
+                  alt="Lehenga"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                  "
+                />
+              </div>
+              <div class="traditional-text">
+                <h4>Embroidered Lehenga</h4>
+                <p>Heavy embroidered lehenga perfect for weddings</p>
+                <span class="price">₹12,999</span>
+              </div>
+            </div>
+
+            <div class="traditional-item">
+              <div class="traditional-thumb">
+                <img
+                  src="images/anarkali.jpg"
+                  alt="Anarkali"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                  "
+                />
+              </div>
+              <div class="traditional-text">
+                <h4>Anarkali Suit Set</h4>
+                <p>Elegant anarkali with dupatta and churidar</p>
+                <span class="price">₹3,499</span>
+              </div>
+            </div>
+
+            <div class="traditional-item">
+              <div class="traditional-thumb">
+                <img
+                  src="images/pathani.jpg"
+                  alt="Pathani"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                  "
+                />
+              </div>
+              <div class="traditional-text">
+                <h4>Pathani Suit</h4>
+                <p>Classic men's pathani with traditional kurta style</p>
+                <span class="price">₹2,799</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="products-container">
+        <h2 class="section-title">Trending Products</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-badge">NEW</span>
+              <img src="images/running.jpg" alt="Nike Running Shoes" />
+            </div>
+            <div class="product-info">
+              <div class="product-brand">Nike</div>
+              <div class="product-name">Men's Running Shoes</div>
+              <div class="product-price">
+                <span class="current-price">₹2,499</span>
+                <span class="original-price">₹4,999</span>
+                <span class="discount">(50% OFF)</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-wishlist">♡ Wishlist</button>
+                <button class="btn-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-badge">SALE</span>
+              <img src="images/women.jpg" alt="Floral Dress" />
+            </div>
+            <div class="product-info">
+              <div class="product-brand">Zara</div>
+              <div class="product-name">Women's Floral Dress</div>
+              <div class="product-price">
+                <span class="current-price">₹1,899</span>
+                <span class="original-price">₹3,999</span>
+                <span class="discount">(52% OFF)</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-wishlist">♡ Wishlist</button>
+                <button class="btn-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-badge">HOT</span>
+              <img src="images/tshirts.jpg" alt="Sports T-Shirt" />
+            </div>
+            <div class="product-info">
+              <div class="product-brand">Adidas</div>
+              <div class="product-name">Sports T-Shirt</div>
+              <div class="product-price">
+                <span class="current-price">₹899</span>
+                <span class="original-price">₹1,799</span>
+                <span class="discount">(50% OFF)</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-wishlist">♡ Wishlist</button>
+                <button class="btn-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-badge">NEW</span>
+              <img src="images/jeans.jpg" alt="Denim Jeans" />
+            </div>
+            <div class="product-info">
+              <div class="product-brand">Levi's</div>
+              <div class="product-name">Denim Jeans</div>
+              <div class="product-price">
+                <span class="current-price">₹2,299</span>
+                <span class="original-price">₹4,599</span>
+                <span class="discount">(50% OFF)</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-wishlist">♡ Wishlist</button>
+                <button class="btn-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="main-footer">
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h3>Harry's</h3>
+            <ul>
+              <li>Who We Are</li>
+              <li>Join Our Team</li>
+              <li>Terms & Conditions</li>
+              <li>We Respect Your Privacy</li>
+              <li>Fees & Payments</li>
+              <li>Returns & Refunds Policy</li>
+              <li>Promotions Terms & Conditions</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Help</h3>
+            <ul>
+              <li>Track Your Order</li>
+              <li>Frequently Asked Questions</li>
+              <li>Returns</li>
+              <li>Cancellations</li>
+              <li>Payments</li>
+              <li>Customer Care</li>
+              <li>How Do I Redeem My Coupon</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Shop by</h3>
+            <ul>
+              <li>All</li>
+              <li>Men</li>
+              <li>Women</li>
+              <li>Kids</li>
+              <li>Indie</li>
+              <li>Stores</li>
+              <li>New Arrivals</li>
+              <li>Brand Directory</li>
+              <li>Home</li>
+              <li>Collections</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Instagram- Harry'slife</li>
+              <li>Instagram- Harry's LUXE</li>
+              <li>Twitter</li>
+              <li>Pinterest</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+          <div class="footer-payments">
+            <div class="footer-title">Payment methods</div>
+            <div class="footer-icons">
+              <span>Net Banking</span>
+              <span
+                ><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg"
+                  height="24"
+              /></span>
+              <span
+                ><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg"
+                  height="24"
+              /></span>
+              <span>CASH ON DELIVERY</span>
+              <span
+                ><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Jio_logo.svg"
+                  height="24"
+              /></span>
+            </div>
+          </div>
+          <div class="footer-secure">
+            <div class="footer-title">Secure systems</div>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/2/2c/SSL.svg"
+              height="32"
+              alt="SSL"
+            />
+            <span>256 BIT ENCRYPTION</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+       const hamburger = document.querySelector('.hamburger');
+      const navBar = document.querySelector('.nav-bar');
+      const overlay = document.querySelector('.mobile-overlay');
+      const navLinks = document.querySelectorAll('.nav-links > li > a');
+
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navBar.classList.toggle('active');
+        overlay.classList.toggle('active');
+        document.body.style.overflow = navBar.classList.contains('active') ? 'hidden' : '';
+      });
+
+      overlay.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navBar.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+
+      // Mobile dropdown toggle
+      navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          if (window.innerWidth <= 968) {
+            const parent = link.parentElement;
+            const dropdown = parent.querySelector('.dropdown');
+            
+            if (dropdown) {
+              e.preventDefault();
+              parent.classList.toggle('active');
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
